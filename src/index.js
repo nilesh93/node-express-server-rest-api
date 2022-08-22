@@ -40,7 +40,7 @@ app.use('/session', routes.session);
 app.use('/users', routes.user);
 app.use('/messages', routes.message);
 app.use("/version", (req,res)=>{
-  return res.json({version: "1.0"})
+  return res.json({version: "2.0"})
 })
 
 // * Start * //
