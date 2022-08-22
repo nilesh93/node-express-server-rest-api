@@ -39,7 +39,9 @@ app.use((req, res, next) => {
 app.use('/session', routes.session);
 app.use('/users', routes.user);
 app.use('/messages', routes.message);
-
+app.use("/version", (req,res)=>{
+  return res.json({version: "1.0"})
+})
 
 // * Start * //
 
