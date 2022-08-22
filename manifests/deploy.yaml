@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: nj93/node-api-sample
+          image: nj93/node-api-sample:v1
           ports:
             - name: http
               containerPort: 3000
