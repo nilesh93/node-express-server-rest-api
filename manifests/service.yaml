@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: node-api-sample
+  annotations:
+    a8r.io/description: 'Node Sample Service'
+    a8r.io/owner: 'nilesh.jayanandana@yahoo.com'
+    a8r.io/chat: '#ambassador'
+    a8r.io/bugs: 'https://github.com/nilesh93/node-express-server-rest-api/issues'
+    a8r.io/documentation: 'https://github.com/nilesh93/node-express-server-rest-api/blob/master/README.md'
+    a8r.io/repository: 'https://github.com/nilesh93/node-express-server-rest-api/'
+    a8r.io/support: 'http://a8r.io/Slack'
+    a8r.io/runbook: 'https://github.com/nilesh93/node-express-server-rest-api/blob/master/README.md'
+    a8r.io/incidents: 'https://github.com/nilesh93/node-express-server-rest-api/issues'
+    a8r.io/dependencies: 'None'
+spec:
+  ports:
+    - name: http
+      port: 80
+      targetPort: 3000
+  selector:
+    app: node-api-sample
