@@ -1,0 +1,5 @@
+k8s_config:
+- manifest_path: /manifests
+  cluster_info:
+    cluster_id: 0d28835b-7d00-54b7-b38b-971b38febc7a
+    cluster_name: Nilesh Jayanandana's cluster
